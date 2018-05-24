@@ -8,9 +8,6 @@ const client = new Discord.Client();
 const DBM = {};
 const DiscordJS = DBM.DiscordJS = require('discord.js');
 
-const DBM = {};
-const DiscordJS = DBM.DiscordJS = require('discord.js');
-
 //---------------------------------------------------------------------
 // Bot
 // Contains functions for controlling the bot.
