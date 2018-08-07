@@ -3,7 +3,8 @@
  * Version 2.0.0
  * Robert Borghese
  */
-
+const Discord = require('discord.js');
+const client = new Discord.Client();
 const DBM = {};
 const DiscordJS = DBM.DiscordJS = require('discord.js');
 
@@ -1676,7 +1677,7 @@ DiscordJS.Emoji.prototype.convertToString = function() {
 if(!process.send) {
 
 Files.initStandalone();
-
+client.login(process.env.BOT_TOKEN);
 } else {
 
 process.on('message', function(content) {
